@@ -1,0 +1,45 @@
+.ss1{
+    text-align:center;
+}
+
+.ss2{
+    color: #000;
+    font-size: 16px;
+}
+.work {
+    margin: 20px;
+    font-size: 18px;
+    display: none;
+}
+.uuu {
+    list-style-type: none;
+    color: #000;
+    padding: 0;
+    width: 10%;
+    background-color: aliceblue;
+    position: absolute;
+    /* position: fixed; */
+    height:40%;
+    margin-left: 10%;
+    text-align:center;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+li a.active {
+    background-color: bisque;
+    color:black;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+#con{
+    margin-left:30%;
+    padding:1px 16px;
+    height:1000px;
+    float: left;
+}

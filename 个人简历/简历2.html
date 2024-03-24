@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/个人简历.css"><!--引入写好的css样式-->
+    <title>计科21-1BJ聂煜的简历</title>
+    <style>
+        body {
+            border:black 2px solid;
+            margin:0 auto;                 /*边框颜色，大小实线*/
+            margin-top:8px;              /*顶部边框大小*/
+            margin-bottom:1px;           /*底部边框大小*/
+            width:60%;
+            height:700px;
+            padding:0px;
+        }
+
+        .style1                     /*class为style1的样式，字体大小为large，字体颜色为橙黄*/
+        {
+            height: 30px;
+            font-size: large;
+            color: black;
+        }
+        .style2
+        {
+            height: 30px;
+            color: black;
+        }
+        .style3
+        {
+            width: 100px;
+            height: 100px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .style4
+        {
+            border-collapse:collapse;
+            /*border-spacing: 0;*/
+            /*width: 800px;*/
+            width: 100%;
+            height: 0px;
+            background: aliceblue;
+        }
+        .style5
+        {
+            font-family: 黑体;
+        }
+        .style6
+        {
+            width: 120px;
+            font-family: 黑体;
+            height: px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            background-color: aliceblue;
+            position: absolute;
+            /*position: fixed;*/
+            height:50%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 16px 32px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: bisque;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="background-color: aliceblue;margin: 0px; padding: 0px;text-align: center"><span class="style2">聂煜 </span> <span class="style1"></span></h1>
+<table class="style4">
+    <tr>
+        <td  style="font-size:0px;" class="style3" rowspan="2" >
+            <img alt="" src="nieyu.png"
+                 style="height: 150px; width:150px;line-height: 200px;display: block;float: left" /></td>
+        <td class="style6">
+            电话 17752670802
+        <td class="style6">
+            邮箱 2549099016@qq.com
+        </td>
+    </tr>
+    <tr>
+        <td class="style6">
+            共青团员</td>
+        <td class="style6">
+            湖南理工学院  本科</td>
+    </tr>
+</table>
+<div>
+    <ul>
+        <li><a id="hh" class="active" href="#home">导航栏</a></li>
+        <li><a id="a" href="#education">大学经历</a></li>
+        <li><a id="b" href="#practice">实践经历</a></li>
+        <li><a id="d" href="#project">获奖荣誉</a></li>
+        <li><a id="e" href="#project">求职意向</a></li>
+    </ul>
+</div>
+
+<div  id="con" style="margin-left:35%;padding:1px 16px;height:1000px;float: left;">
+    <h2>欢迎来到我的简历</h2>
+</div>
+
+<script style="background-color: aliceblue;">
+    var oBtn1 = document.getElementById("a");
+    var oBtn2 = document.getElementById("b");
+    var oBtn3 = document.getElementById("d");
+    var oBtn5 = document.getElementById("e");
+    var oBtn4 = document.getElementById("hh");
+    var c =document.getElementById("con");
+    oBtn1.onclick = function () {
+        
+        c.innerHTML=" ";
+        c.innerHTML+="<p>主修课程：《java面向对象》《人工智能导论》《概率论》《程序设计》《算法与数据结构》等<br></p>"
+        c.innerHTML+="<p>能熟练应用IDEA、VScode等开发工具<br></p>"
+        c.innerHTML+="<p>大一：担任学校社团干部，处理活动办理流程，并在下学期选入主席团<br></p>"
+        c.innerHTML+="<p>大二：加入学校acm实验室，深入学习算法，参加过挑战杯、蓝桥杯、大学生创新创业比赛、互联网加大赛、睿抗机器人设计大赛<br></p>"
+        c.innerHTML+="<p>大三：参加CCPC程序设计大赛，备考英语六级、中级程序员考试<br></p>"
+        c.innerHTML+="<p>大四：打算考公或者考编，继续学习算法和网络安全等知识<br></p>"
+
+
+    }
+    oBtn2.onclick = function () {
+        c.innerHTML=" ";
+        c.innerHTML+="<h2>实践经验</h2>";
+        c.innerHTML+="<p>大二在学校与团队设计过智慧校园系统，通过大数据方便学生查询有效资料<br></p>"
+        c.innerHTML+="<p>设计智能医院管理系统，有效录入查询医生和患者的信息，采用二分法有效缩减信息查询时间<br></p>"
+
+    }
+    oBtn3.onclick = function () {
+        c.innerHTML = " ";
+        c.innerHTML += "<h2>获奖荣誉</h2>";
+        c.innerHTML += "<p>蓝桥杯省级三等奖、睿抗机器人国家三等奖<br>程序设计竞赛校级三等奖、互联网＋校级二等奖<br>CCPC大赛铜牌</p>"
+    }
+    oBtn4.onclick = function () {
+        c.innerHTML=" ";
+        c.innerHTML+="<h2>简历,左边选项</h2>"
+    }
+    oBtn5.onclick = function () {
+        c.innerHTML=" ";
+        c.innerHTML+="<h2>求职意向</h2>";
+        c.innerHTML+="<p>轻松稳定、最好965，我真的超爱双休</p>"
+
+    }
+</script>
+
+</body>
+</html>
